@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ShoppingCart, Menu, Search, Star, ArrowRight, Cpu, Printer, Car, ShieldCheck } from 'lucide-react';
+import logo from './assets/logo.jpg';
 
 const productos = [
   {
@@ -66,15 +67,9 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <div className="flex items-center flex-shrink-0 cursor-pointer">
-              <div className="text-indigo-500 mr-2 flex items-center">
-                <Cpu size={28} strokeWidth={2.5} />
-              </div>
-              <span className="text-2xl font-black tracking-tighter text-white">
-                LEXNOVA
-              </span>
-            </div>
-
+      <div className="flex items-center flex-shrink-0">
+        <img src={logo} alt="Lexnova Logo" className="h-20 w-auto" />
+      </div>
             {/* Menú Escritorio */}
             <div className="hidden md:flex items-center space-x-8">
               <a href="#" className="text-slate-400 hover:text-indigo-400 font-medium transition-colors">Tecnología</a>
@@ -254,14 +249,9 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div className="col-span-1 md:col-span-1">
-              <div className="flex items-center flex-shrink-0 mb-4">
-                 <div className="text-indigo-500 mr-2">
-                  <Cpu size={24} strokeWidth={2.5} />
-                </div>
-                <span className="text-xl font-black tracking-tight text-white">
-                  LEXNOVA
-                </span>
-              </div>
+            <div className="flex items-center flex-shrink-0 mb-4">
+        <img src={logo} alt="Lexnova Logo" className="h-16 w-auto" />
+      </div>
               <p className="text-sm mb-6 text-slate-500">
                 Soluciones avanzadas en tecnología, impresión 3D y componentes de alto rendimiento para Colombia.
               </p>
